@@ -1,0 +1,3658 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    background-image: url('../images/silk.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    overflow-x: hidden
+    
+}
+
+/* HEADER */
+
+header {
+    min-height: 120px;
+    background-color: rgba(0, 0, 0,.4);
+}
+
+/* NAV */
+.hamburger-check{
+    color: white;
+    cursor: pointer;
+}
+/* Hide the checkbox */
+#hamburger-check {
+    display: none;
+}
+
+/* Hide the menu */
+.menu {
+    display: none;
+}
+
+#hamburger-check:checked ~.menu {
+    display: flex;
+    flex-direction: column;
+}
+/* 
+.toggle:checked{
+    display: block;
+}
+/* style for menu */
+.menu{
+    color: #D22D00;
+    font-size: 20px;
+    font-family: sinete, sans-serif;
+}
+.menu a{
+    color: #D22D00;
+    text-decoration: none;
+
+}
+/* MAIN */
+main{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 100%;
+}
+
+.hero {
+    height: 600px;
+    background-image: url('../images/heropianotwo.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+.fade-in-text {
+    font-family: Arial;
+    font-size: 150px;
+    animation: fadeIn 5s;
+    transition: fadeIn 5s ease-in; 
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+h1 {
+    /* outline: 1px solid red; */
+    font-family: sinete, sans-serif;
+    color: #D22D00;
+    width: 90%;
+    text-align: center;
+    background-color: rgba(0, 0, 0,.4);
+    padding: 8% 4%;
+    font-size: 100px;
+    
+}
+/* encore link; */
+h2{
+    font-family: sinete, sans-serif;
+    position: relative;
+    color: #D22D00; 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-decoration: none;
+    top:  -680px;
+    left: 110px;
+    
+}
+h2 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+}
+/* red banner; */
+.red{
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    overflow-x: hidden;
+    top: -60px;
+}
+/* red banner text; */
+h3{
+    font-size: 40px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #080000;   
+    text-decoration: none;
+    position: relative;
+    top: -230px;
+    left: 55px;
+}
+/* piano image one; */
+.piano-one{
+    position: relative;
+    width: 900px;
+    top: -225px;
+    left: -210px;
+    
+    
+}
+/* learn piano and info; */
+.one{
+    font-size: 50px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 20px;
+    top: -450px;
+    
+}
+.two{
+    font-size: 25px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 25px;
+    top: -450px;
+}
+/* piano image 2; */
+.piano-two{
+    position: relative;
+    margin: 40px;
+    width: 1000px;
+    top: -380px;
+    left: -290px;
+}
+/* grades and info; */
+.three{
+    font-size: 50px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 60px;
+    top: -800px;
+    
+}
+.four{
+    font-size: 25px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 30px;
+    top: -800px;
+    
+}
+/* piano three; */
+.piano-three{
+    position: relative;
+    margin: 40px;
+    width: 1000px;
+    top: -560px;
+    left: -290px;
+    
+}
+/* sheet music info; */
+
+.five{
+    font-size: 40px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 30px;
+    top: -1150px;
+    
+}
+.six{
+    font-size: 30px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 15px;
+    top: -1150px;
+    
+}
+/* piano four; */
+.piano-four{
+    position: relative;
+    margin: 40px;
+    width: 1000px;
+    top: -740px;
+    left: -290px;
+    
+}
+/* history and info; */
+.seven{
+    font-size: 35px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 30px;
+    top: -1500px;
+}
+.eight{
+    font-size: 30px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 30px;
+    top: -1500px;
+    
+}
+/* footer; */
+/* grey silk box; */
+.grey{
+    position: relative;
+    margin: 40px;
+    width: 800px;
+    top: -770px;
+    left: -200px;
+    height: 350px;
+    
+}
+/* encore footer; */
+.encore{
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00; 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    text-decoration: none;
+    margin: 40px;
+    left: 40px;
+    top: -1900px;
+}
+.encore a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    
+}
+/* contact info; */
+.contact{
+    font-size: 35px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: -10px;
+    top: -1900px;
+    
+}
+
+.phone{
+    font-size: 20px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: -10px;
+    top: -1900px;
+    
+}
+
+.email{
+    font-size: 20px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: -10px;
+    top: -1900px;
+}
+/* sybscribe link; */
+.subscribe{
+    font-size: 30px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 190px;
+    top: -2100px;    
+}
+.subscribe a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    
+}
+/* newsletter link; */
+.newsletter{
+    font-size: 30px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 190px;
+    top: -2100px;   
+}
+
+.newsletter a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+}
+
+
+/* about*/
+/* red banner text; */
+.nine{
+    font-size: 50px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #080000;   
+    text-decoration: none;
+    position: relative;
+    top: -230px;
+    left: 55px;
+
+}
+/* piano; */
+.pianotwo{
+    position: relative;
+    width: 120%;
+    top: -90px;
+    left: -100px;
+
+}
+/* teacher text; */
+.ten{
+    font-size: 50px;
+    position: relative;
+     font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 40px;
+    top: -350px;
+} 
+/* info teacher text; */
+.eleven{
+    font-size: 25px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 20px;
+    top: -350px;   
+}
+/* what is encore; */
+.twelve{
+    font-size: 50px;
+    position: relative;
+     font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 20px;
+    top: -350px; 
+}
+/* info on encore; */
+.thirteen{
+    font-size: 25px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 15px;
+    top: -350px;  
+}
+/* contact us; */
+.contactus{
+    font-size: 50px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 40px;
+    top: -300px; 
+}
+/*pulls*/
+
+.labelinfo,
+button {
+    color: rgb(251, 247, 247);
+    font-family: sinete, sans-serif;
+}
+.form3 {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    margin-top: 1200px;
+    margin-left: 10%;
+}
+.labelinfo{
+    font-size: 1.5rem;
+    color:#fefafa;
+}
+.inputchange,
+textarea {
+    background: linear-gradient(to top, #000002, #f7f6f6);
+    padding: 3%;
+    margin-bottom: 2%;
+   
+}
+.inputchange::placeholder,
+textarea::placeholder {
+    color:#020000;
+}
+.error {
+    font-size: .75rem;
+    color:#070000;
+    font-family: sinete, sans-serif;
+    padding: 1% 0;
+}
+button:hover {
+    background-color:#840404;
+}
+/* footer; */
+/* grey silk box; */
+.grey2{
+    position: relative;
+    margin: 40px;
+    width: 1000px;
+    top: -10px;
+    left: -290px;
+    height: 350px;
+}
+/* encore footer; */
+.encore1{
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00; 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    text-decoration: none;
+    margin: 40px;
+    left: 40px;
+    top: -350px;
+}
+.encore1 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+}
+/* contact info; */
+.contact1{
+    font-size: 35px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: -10px;
+    top: -350px;
+}
+
+.phone1{
+    font-size: 20px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: -10px;
+    top: -350px;
+}
+
+.email1{
+    font-size: 20px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: -10px;
+    top: -350px;
+}
+/* sybscribe link; */
+.subscribe1{
+    font-size: 30px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 190px;
+    top: -550px;  
+}
+.subscribe1 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    
+}
+/* newsletter link; */
+.newsletter1{
+    font-size: 30px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 190px;
+    top: -550px; 
+}
+
+.newsletter1 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+}
+/* servases page; */
+/* history; */
+.sixteen{
+    font-size: 50px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #080200;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 20px;
+    top: -280px;
+}
+.seventeen{
+    font-size: 50px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 20px;
+    top: -100px;
+}
+/* history info; */
+.eighteen{
+    font-size: 25px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 25px;
+    top: -80px;
+}
+/* history price; */
+.nineteen{
+    font-size: 25px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 170px;
+    top: -80px;
+}
+/* warm up; */
+.twenty{
+    font-size: 50px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 20px;
+    top: -100px;
+}
+/* warm up info; */
+.twentyone{
+    font-size: 25px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 25px;
+    top: -80px;
+}
+/* warm up price; */
+.twentytwo{
+    font-size: 25px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 170px;
+    top: -80px; 
+}
+/* sheet music; */
+.twentythree{
+    font-size: 40px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 20px;
+    top: -100px;
+}
+/* sheet music info; */
+.twentyfour{
+    font-size: 25px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 15px;
+    top: -80px;
+}
+/* sheet music price; */
+.twentyfive{
+    font-size: 25px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 170px;
+    top: -80px; 
+}
+/* premade; */
+.twentysix{
+    font-size: 50px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 20px;
+    top: -100px; 
+}
+/* premade info; */
+.twentyseven{
+    font-size: 25px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 25px;
+    top: -80px;
+}
+/* premade price; */
+.twentyeight{
+    font-size: 25px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 170px;
+    top: -80px;
+}
+/* personal; */
+.twentynine{
+    font-size: 50px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 20px;
+    top: -100px;  
+}
+/* personal info; */
+.thirty{
+    font-size: 25px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 15px;
+    top: -80px; 
+}
+/* personal price; */
+.thirtyone{
+    font-size: 25px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 170px;
+    top: -80px;
+}
+
+
+/* footer; */
+/* grey silk box; */
+.grey3{
+    position: relative;
+    margin: 40px;
+    width: 1000px;
+    top: -50px;
+    left: -290px;
+    height: 350px;
+}
+/* encore footer; */
+.encore2{
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00; 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    text-decoration: none;
+    margin: 40px;
+    left: 40px;
+    top: -450px;
+}
+.encore2 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+}
+/* contact info; */
+.contact2{
+    font-size: 35px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: -10px;
+    top: -450px;
+}
+
+.phone2{
+    font-size: 20px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: -10px;
+    top: -450px;
+}
+
+.email2{
+    font-size: 20px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: -10px;
+    top: -450px;
+}
+/* sybscribe link; */
+.subscribe2{
+    font-size: 30px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 230px;
+    top: -600px;  
+}
+.subscribe2 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    
+}
+/* newsletter link; */
+.newsletter2{
+    font-size: 30px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 230px;
+    top: -600px;     
+}
+
+.newsletter2 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+}
+
+/* waitlist; */
+/* why we have; */
+    
+.waitone{
+    font-size: 35px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #080000;  
+    text-decoration: none;
+    position: relative;
+    top: -220px;
+    left: 50px;
+}
+/* explaining why; */
+.waittwo{
+    font-size: 25px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: -5px;
+    top: -100px;
+}
+/* contact; */
+.waitthree{
+    font-size: 50px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 60px;
+    left: 20px;
+    top: -50px;
+}
+h4 {
+    font-size: 3rem;
+    letter-spacing: .25rem;
+    padding-bottom: 3%;
+    font-family: sinete, sans-serif;
+    color: #D22D00;
+    margin: 80px;
+   
+}
+.labelname,
+button {
+    color: rgb(251, 247, 247);
+    font-family: sinete, sans-serif;
+}
+.form2 {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    top: 1600px;
+    margin-left: 10%;
+}
+.labelname{
+    font-size: 1.5rem;
+    color:#fefafa;
+}
+.inputcolor,
+textarea {
+    background: linear-gradient(to top, #000002, #f7f6f6);
+    padding: 3%;
+    margin-bottom: 2%;
+   
+}
+.inputcolor::placeholder,
+textarea::placeholder {
+    color:#fffdfd;
+}
+.error {
+    font-size: .75rem;
+    color:#070000;
+    font-family: sinete, sans-serif;
+    padding: 1% 0;
+}
+button:hover {
+    background-color:#840404;
+}
+.grey4{
+    position: absolute;
+    margin: 40px;
+    width: 700px;
+    left: -100px;
+    height: 340px;
+    top: 1150px;
+
+}
+
+/* encore footer; */
+.encore3{
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00; 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    text-decoration: none;
+    margin: 40px;
+    left: 30px;
+    top: 20px;
+}
+.encore3 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+}
+/* contact info; */
+.contact3{
+    font-size: 35px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 0px;
+    top: 20px;
+}
+
+.phone3{
+    font-size: 20px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 0px;
+    top: 20px;
+}
+
+.email3{
+    font-size: 20px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 0px;
+    top: 20px;
+}
+/* sybscribe link; */
+.subscribe3{
+    font-size: 30px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 190px;
+    top: -180px;
+}
+.subscribe3 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    
+}
+/* newsletter link; */
+.newsletter3{
+    font-size: 30px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 190px;
+    top: -180px;
+}
+
+.newsletter3 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+}
+
+/*gallery*/
+iframe{
+    width: 480px;
+    top: 200px;
+}
+
+.grey5{
+    position: absolute;
+    margin: 40px;
+    width: 600px;
+    left: -100px;
+    height: 340px;
+    top: 970px;
+
+}
+
+/* encore footer; */
+.encore4{
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00; 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    text-decoration: none;
+    margin: 40px;
+    left: 30px;
+    top: 20px;
+}
+.encore4 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+}
+/* contact info; */
+.contact4{
+    font-size: 35px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 0px;
+    top: 20px;
+}
+
+.phone4{
+    font-size: 20px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 0px;
+    top: 20px;
+}
+
+.email4{
+    font-size: 20px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 0px;
+    top: 20px;
+}
+/* sybscribe link; */
+.subscribe4{
+    font-size: 30px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 190px;
+    top: -180px;
+}
+.subscribe4 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    
+}
+/* newsletter link; */
+.newsletter4{
+    font-size: 30px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 190px;
+    top: -180px;
+}
+
+.newsletter4 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+}
+
+/* media; */
+@media screen and (min-width: 768px) {
+    header {
+        min-height: 70px;
+        background-color: rgba(0, 0, 0,.4);
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        max-width: 100%;
+    }
+
+/* MAIN */
+.hero {
+    height: 400px;
+    background-image: url('../images/heropianotwo.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+h1 {
+    /* outline: 1px solid red; */
+    color: #D22D00;
+    width: 70%;
+    padding: 4% 1%;
+    font-size:80px;
+}
+/* encore link; */
+h2{
+    font-size: 35px;
+    left: 270px;
+    top: -450px;
+}
+
+/* red banner text; */
+h3{
+    left: 170px;
+}
+/* piano image one; */
+.piano-one{
+    width: 149%;
+    top: -350px;
+    left: -470px;
+}
+.one{
+    font-size: 35px;
+    left: 120px;
+    top: -700px;
+}
+.two{
+    font-size: 25px;
+    left: 150px;
+    top: -700px;
+}
+/* piano image 2; */
+.piano-two{
+    width: 146%;
+    top: -600px;
+    left: -470px;
+}
+
+/* grades and info; */
+.three{
+    font-size: 35px;
+    left: 170px;
+    top: -1200px;
+}
+.four{
+    font-size: 25px;
+    left: 170px;
+    top: -1200px;
+}
+/* piano three; */
+.piano-three{
+    width: 146%;
+    top: -840px;
+    left: -470px;
+}
+/* sheet music info; */
+
+.five{
+    font-size: 35px;
+    left: 90px;
+    top: -1670px;
+}
+.six{
+    font-size: 25px;
+    left: 120px;
+    top: -1670px;
+}
+/* piano four; */
+.piano-four{
+    width: 146%;
+    top: -1080px;
+    left: -470px;
+}
+/* history and info; */
+.seven{
+    font-size: 35px;
+    left: 50px;
+    top: -2150px;
+}
+.eight{
+    font-size: 20px;
+    left: 150px;
+    top: -2150px;
+}
+
+/* footer; */
+/* grey silk box; */
+.grey{
+    position: relative;
+    margin: 40px;
+    width: 1270px;
+    top: -1100px;
+    left: -290px;
+    height: 350px;
+}
+/* encore footer; */
+.encore{
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00; 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    text-decoration: none;
+    margin: 40px;
+    left: 180px;
+    top: -2550px;
+}
+/* contact info; */
+.contact{
+    font-size: 35px;
+    left: 10px;
+    top: -2550px;
+}
+
+.phone{
+    font-size: 20px;
+    left: 10px;
+    top: -2550px;
+}
+
+.email{
+    font-size: 20px;
+    left: 10px;
+    top: -2550px;
+}
+/* sybscribe link; */
+.subscribe{
+    font-size: 40px;
+    left: 400px;
+    top: -2750px;    
+}
+/* newsletter link; */
+.newsletter{
+    font-size: 40px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 400px;
+    top: -2750px;   
+}
+/* about*/
+/* media; */
+    /* learn about us; */
+    .nine{
+        top: -230px;
+        left: 200px;
+    
+    }
+    /* piano; */
+    .pianotwo{
+        max-width: 800px;
+        top: -90px;
+        left: -10px;
+    }
+    /* teacher text; */
+    .ten{
+        font-size: 50px;
+        left: 180px;
+        top: -400px;
+    } 
+    /* learn sbout teacher info text; */
+    .eleven{
+        font-size:20px;
+        left: 10px;
+        top: -550px;   
+        margin: 150px;
+    }
+    /* encore text; */
+    .twelve{
+        font-size: 50px;
+        left: 160px;
+        top: -680px;
+    }
+    /* encore info text; */
+    .thirteen{
+        font-size: 20px;
+        left: 10px;
+        top: -800px;   
+        margin: 150px;
+    }
+    .contactus{
+        left: 50px;
+        top: -1000px;   
+        margin: 150px;
+        color: #D22D00;  
+        font-size: 60px;
+    }
+    /*pulls
+   /*pulls*/
+
+.labelinfo,
+button {
+    color: rgb(251, 247, 247);
+    font-family: sinete, sans-serif;
+}
+.form3 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    margin-top: 1800px;
+    margin-left: 25%;
+}
+.labelinfo{
+    font-size: 1.5rem;
+    color:#fefafa;
+}
+.inputchange,
+textarea {
+    background: linear-gradient(to top, #000002, #f7f6f6);
+    padding: 3%;
+    margin-bottom: 2%;
+   
+}
+.inputchange::placeholder,
+textarea::placeholder {
+    color:#020000;
+}
+.error {
+    font-size: .75rem;
+    color:#070000;
+    font-family: sinete, sans-serif;
+    padding: 1% 0;
+}
+button:hover {
+    background-color:#840404;
+}
+/* footer; */
+/* grey silk box; */
+.grey2{
+    width: 1300px;
+    top: -250px;
+    left: -290px;
+    height: 350px;
+}
+/* encore footer; */
+.encore1{
+    font-size: 70px;
+    left: 180px;
+    top: -850px;
+}
+
+/* contact info; */
+.contact1{
+    font-size: 50px;
+    left: -0px;
+    top: -850px;
+}
+
+.phone1{
+    font-size: 30px;
+    left: -0px;
+    top: -850px;
+}
+
+.email1{
+    font-size: 30px;
+    left: -0px;
+    top: -850px;
+}
+/* sybscribe link; */
+.subscribe1{
+    font-size: 40px;
+    left: 450px;
+    top: -1000px;  
+}
+
+/* newsletter link; */
+.newsletter1{
+    font-size: 40px;
+    left: 450px;
+    top: -1000px;  
+}
+
+/*services*/
+/* media; */
+    .sixteen{
+        font-size: 50px;
+        position: relative;
+        font-family: sinete, sans-serif;
+        color: #080200;  
+        text-decoration: none;
+        position: relative;
+        margin: 40px;
+        left: 170px;
+        top: -280px;
+    }
+    .seventeen
+    {
+        font-size: 60px;
+        margin: 100px;
+        left: 50px;
+        top: -180px;
+    }
+    /* history info; */
+.eighteen{
+    font-size: 25px;
+    margin: 200px;
+    left: -10px;
+    top: -300px;
+}
+/* history price; */
+.nineteen{
+    font-size: 25px;
+    margin: 40px;
+    left: 300px;
+    top: -400px;
+}
+.twenty{
+    font-size: 50px;
+    margin: 40px;
+    left: 150px;
+    top: -400px;
+}
+.twentyone{
+    font-size: 25px;
+    margin: 200px;
+    left: -10px;
+    top: -550px; 
+}
+.twentytwo{
+    margin: 40px;
+    left:300px;
+    top: -700px; 
+}
+.twentythree{
+    font-size: 50px;
+    margin: 40px;
+    left: 130px;
+    top: -700px; 
+}
+.twentyfour{
+    margin: 200px;
+    left: -10px;
+    top: -850px; 
+}
+.twentyfive{
+    margin: 40px;
+    left:300px;
+    top: -1000px; 
+}
+
+.twentysix{
+    font-size: 40px;
+    margin: 40px;
+    left: 130px;
+    top: -1000px; 
+}
+.twentyseven{
+    margin: 200px;
+    left: -10px;
+    top: -1150px; 
+}
+.twentyeight{
+    margin: 40px;
+    left:300px;
+    top: -1300px;  
+}
+.twentynine{
+    font-size: 35px;
+    margin: 40px;
+    left: 130px;
+    top: -1300px; 
+}
+
+.thirty{
+    margin: 200px;
+    left: -10px;
+    top: -1450px; 
+}
+.thirtyone{
+    margin: 40px;
+    left:300px;
+    top: -1600px; 
+}
+/* footer; */
+/* grey silk box; */
+.grey3{
+    position: relative;
+    margin: 40px;
+    width: 1300px;
+    top: -830px;
+    left: -290px;
+    height: 350px;
+}
+/* encore footer; */
+.encore2{
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00; 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    text-decoration: none;
+    margin: 40px;
+    left: 170px;
+    top: -1990px;
+}
+.encore2 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+}
+/* contact info; */
+.contact2{
+    font-size: 40px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: -10px;
+    top: -1990px;
+}
+
+.phone2{
+    font-size: 25px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: -10px;
+    top: -1990px;
+}
+
+.email2{
+    font-size: 25px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: -10px;
+    top: -1990px;
+}
+/* sybscribe link; */
+.subscribe2{
+    font-size: 40px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 400px;
+    top: -2190px;  
+}
+.subscribe2 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    
+}
+/* newsletter link; */
+.newsletter2{
+    font-size: 40px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 400px;
+    top: -2190px;     
+}
+
+.newsletter2 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+}
+/*  waitlist; */
+    /*  why; */
+    .waitone{
+        top: -220px;
+        left: 200px;
+    }
+    /* explaining why; */
+    .waittwo{
+        margin: 180px;
+        left: 0px;
+        top: -200px;
+    }
+    /* contact; */
+    .waitthree{
+        font-size: 35px;
+        margin: 80px;
+        left: 40px;
+        top: -300px;
+    }
+
+    h4 {
+        margin: 200px;
+        margin-top: -300px;
+        
+    }
+    .labelname,
+    button {
+        color: rgb(5, 0, 0);
+        font-family: sinete, sans-serif;
+    }
+   
+    .form2 {
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+        margin-top: -100px;
+        margin-left: 24%;
+
+    }
+
+
+    .labelname {
+        font-size: 1.5rem;
+        color:#fefafa;
+    }
+   
+   
+    .inputcolor,
+    textarea {
+        padding: 3%;
+        margin-bottom: 2%;
+        color:#030000;
+       
+    }
+     .inputcolor::placeholder,
+    textarea::placeholder {
+        color:#050000;
+    }
+    .error {
+        font-size: .75rem;
+        color:#070000;
+        font-family: sinete, sans-serif;
+        padding: 1% 0;
+    }
+   
+   
+   
+   
+    button:hover {
+        background-color:#840404;
+    }
+.grey4{
+    position: absolute;
+    margin: 40px;
+    width: 900px;
+    left: -100px;
+    height: 340px;
+    top: 960px;
+}
+
+
+/* encore footer; */
+.encore3{
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    text-decoration: none;
+    margin: 40px;
+    left: 170px;
+    top: 100px;
+}
+
+/* contact info; */
+.contact3{
+    font-size: 25px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: -10px;
+    top: 100px;
+}
+
+
+.phone3{
+    font-size: 25px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: -10px;
+    top: 100px;
+}
+
+
+.email3{
+    font-size: 25px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: -10px;
+    top: 100px;
+}
+/* sybscribe link; */
+.subscribe3{
+    font-size: 40px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 400px;
+    top: -100px;
+}
+.subscribe3 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+   
+}
+/* newsletter link; */
+.newsletter3{
+    font-size: 40px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 400px;
+    top: -100px;
+}
+
+
+.newsletter3 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+}
+
+  /*gallery*/
+  iframe{
+    width: 780px;
+    top: 200px;
+}
+
+.grey5{
+    position: absolute;
+    margin: 40px;
+    width: 900px;
+    left: -100px;
+    height: 340px;
+    top: 850px;
+
+}  
+/* encore footer; */
+.encore4{
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00; 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    text-decoration: none;
+    margin: 40px;
+    left: 170px;
+    top: 20px;
+}
+.encore4 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+}
+/* contact info; */
+.contact4{
+    font-size: 35px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 0px;
+    top: 20px;
+}
+
+.phone4{
+    font-size: 20px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 0px;
+    top: 20px;
+}
+
+.email4{
+    font-size: 20px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 0px;
+    top: 20px;
+}
+/* sybscribe link; */
+.subscribe4{
+    font-size: 40px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 400px;
+    top: -180px;
+}
+.subscribe4 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    
+}
+/* newsletter link; */
+.newsletter4{
+    font-size: 40px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 400px;
+    top: -180px;
+}
+
+.newsletter4 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+}
+}
+
+
+@media screen and (min-width: 1024px){
+    header {
+        min-height: 85px;
+        background-color: rgba(0, 0, 0,.4);
+    }
+/* Hide Label */
+.hamburger-check {
+    display: none;
+}
+/* style for menu */
+.menu,
+#hamburger-check:checked ~.menu {
+display: flex;
+flex-direction: row;
+color: #D22D00;
+font-size: 20px;
+font-family: sinete, sans-serif;
+font-size: 35px;
+
+/* left: 600px;
+top: -479px; */
+
+}
+
+    .menu li{
+    list-style-type: none;
+    font-size: 30px;
+    margin: 70px;
+    top: 50px;
+}
+
+.menu a{
+    color: #D22D00;
+    text-decoration: none;
+
+}
+
+.menu a:hover{
+    color: white;
+}
+.hero {
+    height: 400px;
+    background-image: url('../images/heropianotwo.png');
+    width: 100%;
+    
+}
+
+h2{
+    font-size: 40px;
+    left: 370px;
+    top: -550px;
+}
+
+/* red banner text; */
+h3{
+    left: 250px;
+    font-size: 50px;
+}
+/* piano image one; */
+.piano-one{
+    width: 150%;
+    height: 1100px;
+    top: -340px;
+    left: -640px;
+    
+}
+.one{
+    font-size: 50px;
+    left: 170px;
+    top: -650px;
+}
+.two{
+    font-size: 30px;
+    left: 250px;
+    top: -650px;;
+}
+/* piano image 2; */
+.piano-two{
+    width: 145%;
+    height: 1100px;
+    top: -580px;
+    left: -600px;
+    
+}
+
+/* grades and info; */
+.three{
+    font-size: 50px;
+    left: 250px;
+    top: -1100px;
+}
+.four{
+    font-size: 30px;
+    left: 250px;
+    top: -1100px;
+}
+/* piano three; */
+.piano-three{
+    width: 145%;
+    height: 1100px;
+    top: -800px;
+    left: -600px;
+}
+/* sheet music info; */
+
+.five{
+    font-size: 40px;
+    left: 150px;
+    top: -1500px;
+}
+.six{
+    font-size: 30px;
+    left: 200px;
+    top: -1500px;
+}
+/* piano four; */
+.piano-four{
+    width: 145%;
+    height: 1100px;
+    top: -1000px;
+    left: -600px;
+}
+/* history and info; */
+.seven{
+    font-size: 40px;
+    left: 100px;
+    top: -1900px;
+}
+.eight{
+    font-size: 30px;
+    left: 150px;
+    top: -1900px;
+}
+/* footer; */
+/* grey silk box; */
+.grey{
+    position: relative;
+    margin: 40px;
+    width: 1350px;
+    top: -970px;
+    left: -200px;
+    height: 350px;
+    
+}
+/* encore footer; */
+.encore{
+    left: 300px;
+    top: -2280px;
+}
+/* contact info; */
+.contact{
+    font-size: 35px;
+    left: -10px;
+    top: -2280px;
+}
+
+.phone{
+    left: -10px;
+    top: -1730px;
+    top: -2280px;
+}
+
+.email{
+    left: -10px;
+    top: -2280px;
+    font-size: 25px;
+}
+/* sybscribe link; */
+.subscribe{
+    font-size: 50px;
+    left: 600px;
+    top: -2500px;    
+}
+/* newsletter link; */
+.newsletter{
+    font-size: 50px;
+    left: 600px;
+    top: -2500px;     
+}
+/*about*/
+
+    /* learn about us; */
+    .nine{
+       top: -230px;
+       left: 300px;
+   }
+   /* piano; */
+.pianotwo{
+    max-width: 1050px;
+    top: -90px;
+    left: -10px;
+}
+/* teacher text; */
+.ten{
+   font-size: 80px;
+   left: 160px;
+   top: -570px;
+} 
+/* learn sbout teacher info text; */
+.eleven{
+   font-size:20px;
+   left: -50px;
+   top: -750px; 
+   margin: 230px;
+}
+/* encore text; */
+.twelve{
+   font-size: 70px;
+   left: 160px;
+   top: -950px;
+}
+ /* encore info text; */
+ .thirteen{
+   font-size: 20px;
+   left: -50px;
+   top: -1150px;   
+   margin: 230px;
+}
+/* contact us; */
+
+.contactus{
+    font-size: 60px;
+    margin: 40px;
+    left:250px;
+    top: -1350px; 
+}
+/*pulls
+/*pulls*/
+
+.labelinfo,
+button {
+    color: rgb(251, 247, 247);
+    font-family: sinete, sans-serif;
+}
+.form3 {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    margin-top:1950px;
+    margin-left: 25%;
+}
+.labelinfo{
+    font-size: 1.5rem;
+    color:#fefafa;
+}
+.inputchange,
+textarea {
+    background: linear-gradient(to top, #000002, #f7f6f6);
+    padding: 3%;
+    margin-bottom: 2%;
+   
+}
+.inputchange::placeholder,
+textarea::placeholder {
+    color:#020000;
+}
+.error {
+    font-size: .75rem;
+    color:#070000;
+    font-family: sinete, sans-serif;
+    padding: 1% 0;
+}
+button:hover {
+    background-color:#840404;
+}
+/* footer; */
+/* grey silk box; */
+.grey2{
+   width: 1600px;
+   top: -380px;
+   left: -290px;
+   height: 350px;
+}
+/* encore footer; */
+.encore1{
+   font-size: 80px;
+   left: 250px;
+   top: -1100px;
+}
+
+/* contact info; */
+.contact1{
+   left: 30px;
+   top: -1100px;
+}
+
+.phone1{
+   left: 30px;
+   top: -1100px;
+}
+
+.email1{
+   left: 30px;
+   top: -1100px;
+}
+/* sybscribe link; */
+.subscribe1{
+    font-size: 50px;
+   left: 500px;
+   top: -1300px;  
+}
+
+/* newsletter link; */
+.newsletter1{
+    font-size: 50px;
+   left: 500px;
+   top: -1300px; 
+}
+/*services*/
+    /* what we offer; */
+
+ .sixteen{
+     font-size: 50px;
+     position: relative;
+     font-family: sinete, sans-serif;
+     color: #080200;  
+     text-decoration: none;
+     position: relative;
+     margin: 40px;
+     left: 300px;
+     top: -280px;
+ }
+
+ /* history; */
+ .seventeen{
+     font-size: 70px;
+     margin: 40px;
+     left: 200px;
+     top: -100px;
+ }
+
+ /* history info; */
+ .eighteen{
+     font-size: 25px;
+     margin: 200px;
+     left: -10px;
+     top: -240px;
+ }
+ /* history price; */
+.nineteen{
+ font-size: 25px;
+ margin: 40px;
+ left: 410px;
+ top: -400px;
+}
+.twenty{
+ font-size: 50px;
+ margin: 40px;
+ left: 250px;
+ top: -400px;
+}
+.twentyone{
+ font-size: 25px;
+ margin: 200px;
+ left: -10px;
+ top: -550px; 
+}
+.twentytwo{
+ margin: 40px;
+ left: 410px;
+ top: -700px; 
+}
+.twentythree{
+ font-size: 50px;
+ margin: 40px;
+ left: 250px;
+ top: -700px;  
+}
+.twentyfour{
+ margin: 200px;
+ left: -10px;
+ top: -850px; 
+}
+.twentyfive{
+ margin: 40px;
+ left: 410px;
+ top: -1000px;  
+}
+.twentysix{
+ font-size: 40px;
+ margin: 40px;
+ left: 250px;
+ top: -1000px;
+}
+.twentyseven{
+ margin: 200px;
+ left: -10px;
+ top: -1150px; 
+}
+.twentyeight{
+    left: 410px;
+}
+.twentynine{
+    left: 250px;
+}
+.thirty{
+    left: -10px;
+}
+.thirtyone{
+    left: 410px;
+}
+
+.grey3{
+    position: relative;
+    margin: 40px;
+    width: 1600px;
+    top: -800px;
+    left: -290px;
+    height: 400px;
+}
+  
+/* encore footer; */
+.encore2{
+ position: relative;
+ font-family: sinete, sans-serif;
+ color: #D22D00; 
+ font-weight: 400;
+ font-style: normal;
+ font-size: 70px;
+ text-decoration: none;
+ margin: 40px;
+ left:290px;
+ top: -1990px;
+}
+.encore2 a{
+ color: #D22D00;  
+ text-decoration: none;
+ position: relative;
+ margin: 40px;
+}
+/* contact info; */
+.contact2{
+ font-size: 49px;
+ position: relative;
+ font-family: sinete, sans-serif;
+ color: #D22D00;  
+ text-decoration: none;
+ position: relative;
+ margin: 40px;
+ left: -10px;
+ top: -1990px;
+}
+
+.phone2{
+ font-size: 40px;
+ position: relative;
+ font-family: the-seasons, sans-serif;
+ font-style: normal;
+ font-weight: 300;
+ color: #c9c9c8;  
+ text-decoration: none;
+ position: relative;
+ margin: 40px;
+ left: -10px;
+ top: -1990px;
+}
+
+.email2{
+ font-size: 40px;
+ position: relative;
+ font-family: the-seasons, sans-serif;
+ font-style: normal;
+ font-weight: 300;
+ color: #c9c9c8;  
+ text-decoration: none;
+ position: relative;
+ margin: 40px;
+ left: -10px;
+ top: -1990px;
+}
+/* sybscribe link; */
+.subscribe2{
+ font-size: 45px;
+ position: relative;
+ font-family: sinete, sans-serif;
+ color: #D22D00;  
+ text-decoration: none;
+ position: relative;
+ margin: 40px;
+ left: 600px;
+ top: -2190px;  
+}
+.subscribe2 a{
+ color: #D22D00;  
+ text-decoration: none;
+ position: relative;
+ margin: 40px;
+ 
+}
+/* newsletter link; */
+.newsletter2{
+ font-size: 45px;
+ position: relative;
+ font-family: sinete, sans-serif;
+ color: #D22D00;  
+ text-decoration: none;
+ position: relative;
+ margin: 40px;
+ left: 600px;
+ top: -2190px;     
+}
+
+.newsletter2 a{
+ color: #D22D00;  
+ text-decoration: none;
+ position: relative;
+ margin: 40px;
+}
+
+
+  
+/* waitlist; */
+/* why we have; */
+    
+.waitone{
+    font-size: 50px;
+    top: -220px;
+    left: 220px;
+}
+/* explaining why; */
+.waittwo{
+    font-size: 25px;
+    margin: 200px;
+    left: -10px;
+    top: -300px;
+}
+/* contact; */
+.waitthree{
+    margin: 60px;
+    left:130px;
+    top: -400px;
+    font-size: 40px;
+}
+
+
+h4 {
+    margin: 115px;
+    margin-top: -400px;
+    margin-left: 320px;
+}
+.labelname,
+button {
+    color: rgb(5, 0, 0);
+    font-family: sinete, sans-serif;
+}
+
+.form2 {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    top: 1400px;
+    color:#0c0101;
+    
+}
+
+
+.labelname {
+    font-size: 1.5rem;
+    color:#fefafa;
+}
+
+
+.inputcolor,
+textarea {
+    padding: 3%;
+    margin-bottom: 2%;
+    color:#030000;
+}
+.inputcolor::placeholder,
+textarea::placeholder {
+    color:#050000;
+}
+.error {
+    font-size: .75rem;
+    color:#070000;
+    font-family: sinete, sans-serif;
+    padding: 1% 0;
+}
+
+
+
+
+button:hover {
+    background-color:#840404;
+}
+.grey4{
+position: absolute;
+margin: 40px;
+width: 1200px;
+left: -100px;
+height: 340px;
+top: 930px;
+}
+
+
+/* encore footer; */
+.encore3{
+position: relative;
+font-family: sinete, sans-serif;
+color: #D22D00;
+font-weight: 400;
+font-style: normal;
+font-size: 70px;
+text-decoration: none;
+margin: 40px;
+left: 300px;
+top: 40px;
+}
+
+/* contact info; */
+.contact3{
+font-size: 40px;
+position: relative;
+font-family: sinete, sans-serif;
+color: #D22D00;  
+text-decoration: none;
+position: relative;
+margin: 40px;
+left: -10px;
+top: 40px;
+}
+
+
+.phone3{
+font-size: 30px;
+position: relative;
+font-family: the-seasons, sans-serif;
+font-style: normal;
+font-weight: 300;
+color: #c9c9c8;  
+text-decoration: none;
+position: relative;
+margin: 40px;
+left: -10px;
+top: 40px;
+}
+
+
+.email3{
+font-size: 30px;
+position: relative;
+font-family: the-seasons, sans-serif;
+font-style: normal;
+font-weight: 300;
+color: #c9c9c8;  
+text-decoration: none;
+position: relative;
+margin: 40px;
+left: -10px;
+top: 40px;
+}
+/* sybscribe link; */
+.subscribe3{
+font-size: 40px;
+position: relative;
+font-family: sinete, sans-serif;
+color: #D22D00;  
+text-decoration: none;
+position: relative;
+margin: 40px;
+left: 700px;
+top: -180px;
+}
+.subscribe3 a{
+color: #D22D00;  
+text-decoration: none;
+position: relative;
+margin: 40px;
+
+}
+/* newsletter link; */
+.newsletter3{
+font-size: 40px;
+position: relative;
+font-family: sinete, sans-serif;
+color: #D22D00;  
+text-decoration: none;
+position: relative;
+margin: 40px;
+left: 700px;
+top: -180px;
+}
+
+
+.newsletter3 a{
+color: #D22D00;  
+text-decoration: none;
+position: relative;
+margin: 40px;
+}
+/*gallery*/
+iframe{
+    width: 1050px;
+    top: 200px;
+}
+
+.grey5{
+    position: absolute;
+    margin: 40px;
+    width: 1200px;
+    left: -100px;
+    height: 340px;
+    top: 900px;
+
+}  
+/* encore footer; */
+.encore4{
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00; 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    text-decoration: none;
+    margin: 40px;
+    left: 300px;
+    top: 20px;
+}
+.encore4 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+}
+/* contact info; */
+.contact4{
+    font-size: 40px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 0px;
+    top: 20px;
+}
+
+.phone4{
+    font-size: 30px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 0px;
+    top: 20px;
+}
+
+.email4{
+    font-size: 30px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 0px;
+    top: 20px;
+}
+/* sybscribe link; */
+.subscribe4{
+    font-size: 50px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 600px;
+    top: -180px;
+}
+.subscribe4 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    
+}
+/* newsletter link; */
+.newsletter4{
+    font-size: 50px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 600px;
+    top: -180px;
+}
+
+.newsletter4 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+}
+
+}
+@media screen and (min-width:1280px){
+
+    .menu,
+    #hamburger-check:checked ~.menu {
+    display: flex;
+    flex-direction: row;
+    color: #D22D00;
+    font-size: 20px;
+    font-family: sinete, sans-serif;
+    font-size: 35px;
+    
+    /* left: 600px;
+    top: -479px; */
+    
+    }
+    
+    .menu li{
+        list-style-type: none;
+        font-size: 40px;
+        margin: 80px;
+        top: 5rem;
+    }
+    .menu a:hover{
+        color: white;
+    }
+
+    .hero {
+        height: 400px;
+        width: 100%;
+        
+    }
+    header {
+        min-height: 100px;
+        background-color: rgba(0, 0, 0,.4);
+    }
+    main{
+       
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        max-width: 100%;
+    }
+    h2{
+        font-size: 50px;
+        left: 490px;
+        top: -600px;
+    }
+    /* red banner text; */
+h3{
+    left: 400px;
+    font-size: 50px;
+}
+/* piano image one; */
+.piano-one{
+    width: 2420px;
+    height: 1200px;
+    top: -380px;
+    left: -570px;
+}
+.one{
+    font-size: 50px;
+    left: 290px;
+    top: -700px;
+ 
+}
+.two{
+    font-size: 30px;
+    left: 395px;
+    top: -700px;
+}
+/* piano image 2; */
+.piano-two{
+    width: 2600px;
+    height: 1200px;
+    top: -620px;
+    left: -700px;
+}
+
+/* grades and info; */
+.three{
+    font-size: 50px;
+    left: 340px;
+    top: -1150px;
+}
+.four{
+    font-size: 30px;
+    left: 340px;
+    top: -1100px;
+}
+/* piano three; */
+.piano-three{
+    width: 2600px;
+    height: 1200px;
+    top: -800px;
+    left: -700px;
+}
+/* sheet music info; */
+
+.five{
+    font-size: 40px;
+    left: 300px;
+    top: -1500px;
+}
+.six{
+    font-size: 30px;
+    left: 320px;
+    top: -1450px;
+}
+/* piano four; */
+.piano-four{
+    width: 2600px;
+    height: 1200px;
+    top: -1000px;
+    left: -700px;
+}
+/* history and info; */
+.seven{
+    font-size: 40px;
+    left: 260px;
+    top: -1900px;
+}
+.eight{
+    font-size: 30px;
+    left: 290px;
+    top: -1850px;
+}
+/* footer; */
+/* grey silk box; */
+.grey{
+    width: 1800px;
+    top: -920px;
+    left: -290px;
+    height: 350px;
+    
+}
+/* encore footer; */
+.encore{
+    left: 390px;
+    top: -2200px;
+}
+/* contact info; */
+.contact{
+    font-size: 35px;
+    left: 100px;
+    top: -2200px;
+}
+
+.phone{
+    left: 100px;
+    top: -2200px;
+    font-size: 25px;
+}
+
+.email{
+    left: 100px;
+    top: -2200px;
+    font-size: 25px;
+}
+/* sybscribe link; */
+.subscribe{
+    font-size: 50px;
+    left: 800px;
+    top: -2400px;   
+}
+/* newsletter link; */
+.newsletter{
+    font-size: 50px;
+    left: 800px;
+    top: -2400px;     
+}
+/*about*/
+
+    /* red banner text; */
+    .nine{
+        font-size: 80px;
+        top: -230px;
+        left: 350px;
+    
+    }
+        /* piano; */
+        .pianotwo{
+        width: 1300px;
+        top: -90px;
+        left: 55px;
+        }
+         /* teacher text; */
+     .ten{
+        font-size: 100px;
+        left: 280px;
+        top: -550px;
+    } 
+    /* learn sbout teacher info text; */
+    .eleven{
+        left: 10px;
+    }
+    /* encore text; */
+    .twelve{
+        font-size: 100px;
+        left: 230px;
+        top: -950px;
+    }
+      /* encore info text; */
+      .thirteen{
+        left: 10px;
+    }
+    /* contact us; */
+    
+    .fourteen{
+        font-size: 100px;
+        left: 300px;
+        top: -1050px;
+    }
+    .contactus{
+        font-size: 70px;
+        margin: 40px;
+        left:370px;
+        top: -1350px; 
+    }
+    /*pulls*/
+
+.labelinfo,
+button {
+    color: rgb(251, 247, 247);
+    font-family: sinete, sans-serif;
+}
+.form3 {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    margin-top: 2000px;
+    margin-left: 32%;
+}
+.labelinfo{
+    font-size: 1.5rem;
+    color:#fefafa;
+}
+.inputchange,
+textarea {
+    background: linear-gradient(to top, #000002, #f7f6f6);
+    padding: 3%;
+    margin-bottom: 2%;
+   
+}
+.inputchange::placeholder,
+textarea::placeholder {
+    color:#020000;
+}
+.error {
+    font-size: .75rem;
+    color:#070000;
+    font-family: sinete, sans-serif;
+    padding: 1% 0;
+}
+button:hover {
+    background-color:#840404;
+}
+    /* footer; */
+    /* grey silk box; */
+    .grey2{
+        width: 1900px;
+        top: -300px;
+        left: -290px;
+        height: 500px;
+    }
+    /* encore footer; */
+    .encore1{
+        font-size: 150px;
+        left: 320px;
+        top: -1100px;
+    }
+    
+    /* contact info; */
+    .contact1{
+        left: 100px;
+        top: -1100px;
+    }
+    
+    .phone1{
+        left: 100px;
+        top: -1100px;
+    }
+    
+    .email1{
+        left: 100px;
+        top: -1100px;
+    }
+    /* sybscribe link; */
+    .subscribe1{
+        font-size: 60px;
+        left: 800px;
+        top: -1300px;  
+    }
+    
+    /* newsletter link; */
+    .newsletter1{
+        font-size: 60px;
+         left: 800px;
+        top: -1300px;  
+    }
+
+    /*services*/
+        /* what we offer; */
+   
+        .sixteen{
+           font-size: 80px;
+           position: relative;
+           font-family: sinete, sans-serif;
+           color: #080200;  
+           text-decoration: none;
+           position: relative;
+           margin: 40px;
+           left: 350px;
+           top: -280px;
+       }
+       /* history; */
+       .seventeen{
+           font-size: 90px;
+           position: relative;
+           font-family: sinete, sans-serif;
+           color: #D22D00;  
+           text-decoration: none;
+           position: relative;
+           margin: 40px;
+           left: 290px;
+           top: -100px;
+       }
+       /* history info; */
+       .eighteen{
+           font-size: 25px;
+           margin: 200px;
+           left: 100px;
+           top: -200px;
+       }
+       /* history price; */
+   .nineteen{
+       font-size: 25px;
+       margin: 40px;
+       left: 600px;
+       top: -370px;
+   }
+   .twenty{
+       font-size: 90px;
+       margin: 40px;
+       left: 290px;
+       top: -400px;
+   }
+   .twentyone{
+       left: 100px;
+   }
+   .twentytwo{
+       left: 600px;
+   }
+   .twentythree{
+       font-size: 90px;
+       margin: 40px;
+       left: 290px;
+   }
+   .twentyfour{
+       left: 100px;
+   }
+   .twentyfive{
+       left: 600px;
+   }
+   .twentysix{
+       font-size: 90px;
+       margin: 40px;
+       left: 190px;
+   }
+   .twentyseven{
+       left: 100px;
+   }
+   .twentyeight{
+       left: 600px;
+   }
+   .twentynine{
+       font-size: 90px;
+       margin: 40px;
+       left: 80px;
+   }
+   .thirty{
+       left: 100px;
+   }
+   .thirtyone{
+       left: 600px;
+   }
+   /* encore footer; */
+   
+   .grey3{
+    position: relative;
+    margin: 40px;
+    width: 1800px;
+    top: -800px;
+    left: -290px;
+    height: 400px;
+}
+   .encore2{
+       position: relative;
+       font-family: sinete, sans-serif;
+       color: #D22D00; 
+       font-weight: 400;
+       font-style: normal;
+       font-size: 100px;
+       text-decoration: none;
+       margin: 40px;
+       left: 370px;
+       top: -1990px;
+   }
+   .encore2 a{
+       color: #D22D00;  
+       text-decoration: none;
+       position: relative;
+       margin: 40px;
+   }
+   /* contact info; */
+   .contact2{
+       font-size: 49px;
+       position: relative;
+       font-family: sinete, sans-serif;
+       color: #D22D00;  
+       text-decoration: none;
+       position: relative;
+       margin: 40px;
+       left: -10px;
+       top: -1990px;
+   }
+   
+   .phone2{
+       font-size: 40px;
+       position: relative;
+       font-family: the-seasons, sans-serif;
+       font-style: normal;
+       font-weight: 300;
+       color: #c9c9c8;  
+       text-decoration: none;
+       position: relative;
+       margin: 40px;
+       left: -10px;
+       top: -1990px;
+   }
+   
+   .email2{
+       font-size: 40px;
+       position: relative;
+       font-family: the-seasons, sans-serif;
+       font-style: normal;
+       font-weight: 300;
+       color: #c9c9c8;  
+       text-decoration: none;
+       position: relative;
+       margin: 40px;
+       left: -10px;
+       top: -1990px;
+   }
+   /* sybscribe link; */
+   .subscribe2{
+       font-size: 50px;
+       position: relative;
+       font-family: sinete, sans-serif;
+       color: #D22D00;  
+       text-decoration: none;
+       position: relative;
+       margin: 40px;
+       left: 800px;
+       top: -2190px;  
+   }
+   .subscribe2 a{
+       color: #D22D00;  
+       text-decoration: none;
+       position: relative;
+       margin: 40px;
+       
+   }
+   /* newsletter link; */
+   .newsletter2{
+       font-size: 50px;
+       position: relative;
+       font-family: sinete, sans-serif;
+       color: #D22D00;  
+       text-decoration: none;
+       position: relative;
+       margin: 40px;
+       left: 800px;
+       top: -2190px;     
+   }
+   
+   .newsletter2 a{
+       color: #D22D00;  
+       text-decoration: none;
+       position: relative;
+       margin: 40px;
+   }
+   /*  waitlist; */
+    /*  why; */
+    .waitone{
+        top: -220px;
+        left: 350px;
+    }
+    /* explaining why; */
+    .waittwo{
+        margin: 180px;
+        left: 0px;
+        top: -200px;
+    }
+    /* contact; */
+    .waitthree{
+        font-size: 35px;
+        margin: 80px;
+        left: 300px;
+        top: -300px;
+    }
+
+    h4 {
+        margin: 200px;
+        margin-top: -300px;
+        margin-left: 470px;
+        
+    }
+    .labelname,
+    button {
+        color: rgb(5, 0, 0);
+        font-family: sinete, sans-serif;
+    }
+   
+    .form2 {
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+        margin-top: -200px;
+        margin-left: 35%;
+
+    }
+
+
+    .labelname {
+        font-size: 1.5rem;
+        color:#fefafa;
+    }
+   
+   
+    .inputcolor,
+    textarea {
+        padding: 3%;
+        margin-bottom: 2%;
+        color:#030000;
+       
+    }
+     .inputcolor::placeholder,
+    textarea::placeholder {
+        color:#050000;
+    }
+    .error {
+        font-size: .75rem;
+        color:#070000;
+        font-family: sinete, sans-serif;
+        padding: 1% 0;
+    }
+   
+   
+   
+   
+    button:hover {
+        background-color:#840404;
+    }
+.grey4{
+    position: absolute;
+    margin: 40px;
+    width: 1400px;
+    left: -100px;
+    height: 500px;
+    top: 960px;
+}
+
+
+/* encore footer; */
+.encore3{
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    text-decoration: none;
+    margin: 40px;
+    left: 400px;
+    top: 10px;
+}
+
+/* contact info; */
+.contact3{
+    font-size:60px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: -10px;
+    top: -50px;
+}
+
+
+.phone3{
+    font-size: 25px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: -10px;
+    top: -50px;
+}
+
+
+.email3{
+    font-size: 25px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: -10px;
+    top: -50px;
+}
+/* sybscribe link; */
+.subscribe3{
+    font-size: 60px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left:800px;
+    top: -300px;
+}
+.subscribe3 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+   
+}
+/* newsletter link; */
+.newsletter3{
+    font-size: 60px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 800px;
+    top: -300px;
+}
+
+
+.newsletter3 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+}
+
+/*gallery*/
+iframe{
+    width: 1300px;
+    top: 200px;
+}
+
+.grey5{
+    position: absolute;
+    margin: 40px;
+    width: 1500px;
+    left: -100px;
+    height: 340px;
+    top: 930px;
+
+}  
+/* encore footer; */
+.encore4{
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00; 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    text-decoration: none;
+    margin: 40px;
+    left: 450px;
+    top: 20px;
+}
+.encore4 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+}
+/* contact info; */
+.contact4{
+    font-size: 60px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 0px;
+    top: 20px;
+}
+
+.phone4{
+    font-size: 35px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 0px;
+    top: 20px;
+}
+
+.email4{
+    font-size: 35px;
+    position: relative;
+    font-family: the-seasons, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #c9c9c8;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 0px;
+    top: 20px;
+}
+/* sybscribe link; */
+.subscribe4{
+    font-size: 60px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 800px;
+    top: -180px;
+}
+.subscribe4 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    
+}
+/* newsletter link; */
+.newsletter4{
+    font-size: 60px;
+    position: relative;
+    font-family: sinete, sans-serif;
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+    left: 800px;
+    top: -180px;
+}
+
+.newsletter4 a{
+    color: #D22D00;  
+    text-decoration: none;
+    position: relative;
+    margin: 40px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+  
+
+
