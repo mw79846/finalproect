@@ -488,7 +488,7 @@ button {
     display: flex;
     flex-direction: column;
     width: 380px;
-    margin-top: 1200px;
+    margin-top: -300px;
     margin-left: 10%;
 }
 .labelinfo{
